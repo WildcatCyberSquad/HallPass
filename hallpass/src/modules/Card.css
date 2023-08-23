@@ -1,0 +1,13 @@
+.background {
+  height: 80%;
+  border-radius: 15px;
+  background-color: rgb(199, 199, 199);
+  border-color: rgb(0, 0, 0);
+  border-width: 2px;
+  border-style: solid;
+}
+.borderRight {
+  border-right-color: rgb(145, 145, 145);
+  border-right-width: 2px;
+  border-right-style: solid;
+}
