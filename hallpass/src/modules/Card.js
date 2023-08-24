@@ -1,12 +1,19 @@
 import "./Card.css";
+function readForm() {
+  var name = document.getElementById("nameData").value;
+  document.getElementById("Name").innerHTML = name;
+}
+
 function Card() {
   return (
     <div class="container text-center background">
       <div class="row">
         <div class="col borderRight">
-          <input></input>
+          <input type="text" id="nameData" placeholder="Name"></input>
+
+          <button onClick={readForm}>Check Out</button>
         </div>
-        <div class="col borderRight"></div>
+        <div class="col borderRight" id="Name"></div>
         <div class="col">
           <button class="button">Check In</button>
         </div>
