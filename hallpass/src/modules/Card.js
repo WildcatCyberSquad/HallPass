@@ -4,6 +4,10 @@ function readForm() {
   document.getElementById("Name").innerHTML = name;
 }
 
+function checkIn() {
+  document.getElementById("Name").innerHTML = "";
+}
+
 function Card() {
   return (
     <div class="container text-center background">
@@ -11,12 +15,16 @@ function Card() {
         <div class="col borderRight">
           <input type="text" id="nameData" placeholder="Name"></input>
 
-          <button onClick={readForm}>Check Out</button>
+          <button onClick={readForm} class="checkOut">
+            Check Out
+          </button>
         </div>
         <div class="col borderRight" id="Name"></div>
-        <div class="col">
-          <button class="button">Check In</button>
-        </div>
+        {/* <div class="col">
+          <button class="button" onClick={checkIn}>
+            Check In
+          </button>
+        </div> */}
       </div>
     </div>
   );
