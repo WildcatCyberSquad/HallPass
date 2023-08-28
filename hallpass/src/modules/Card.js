@@ -2,6 +2,7 @@ import "./Card.css";
 function readForm() {
   var name = document.getElementById("nameData").value;
   document.getElementById("Name").innerHTML = name;
+  document.getElementById("nameData").value = "";
 }
 
 function checkIn() {
@@ -13,18 +14,16 @@ function Card() {
     <div class="container text-center background">
       <div class="row">
         <div class="col borderRight">
-          <input type="text" id="nameData" placeholder="Name"></input>
+          <form onSubmit={readForm}>
+            <input type="text" id="nameData" placeholder="Name"></input>
+          </form>
 
           <button onClick={readForm} class="checkOut">
             Check Out
           </button>
         </div>
-        <div class="col borderRight" id="Name"></div>
-        {/* <div class="col">
-          <button class="button" onClick={checkIn}>
-            Check In
-          </button>
-        </div> */}
+        {/* <div class="col borderRight" id="Name"> */}
+        <button class="col checkIn" id="Name" onClick={checkIn}></button>
       </div>
     </div>
   );
