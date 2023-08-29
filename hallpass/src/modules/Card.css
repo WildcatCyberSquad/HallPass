@@ -1,5 +1,5 @@
 .background {
-  height: 400px;
+  height: 570px;
   border-radius: 15px;
   background-color: rgb(199, 199, 199);
   border-color: rgb(0, 0, 0);
@@ -9,7 +9,7 @@
 .borderRight {
   border-right-color: rgb(145, 145, 145);
   border-right-width: 2px;
-  height: 395px;
+  height: 565px;
   border-right-style: solid;
 }
 .checkIn {
@@ -33,9 +33,11 @@ input {
 }
 .checkOut {
   margin-top: 15px;
-  width: 200px;
+  margin: 10px;
+  width: 90%;
   height: 50px;
   border-radius: 15px;
+  font-size: 20px;
   background-color: white;
 }
 .checkOut:hover {
