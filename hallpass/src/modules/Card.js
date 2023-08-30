@@ -1,9 +1,18 @@
 import Button from "./Buttons";
 import "./Card.css";
-function readForm() {
-  var name = document.getElementById("nameData").value;
-  document.getElementById("Name").innerHTML = name;
-  document.getElementById("nameData").value = "";
+import firstPeriod from "../ClassPeriods/first.json";
+
+// function readForm(event) {
+//   event.preventDefault();
+//   var name = document.getElementById("nameData").value;
+//   document.getElementById("Name").innerHTML = name;
+//   document.getElementById("nameData").value = "";
+// }
+
+function First() {
+  firstPeriod.map((firstPeriod) => {
+    return <Button text={firstPeriod}></Button>;
+  });
 }
 
 function checkIn() {
@@ -15,8 +24,12 @@ function Card() {
     <div class="container text-center background">
       <div class="row">
         <div class="col borderRight">
-          <Button text="1st Period"></Button>
-          <button class="checkOut"></button>
+          <Button
+            class="checkOut"
+            text="1st Period"
+            classNumber={First}
+          ></Button>
+
           <button class="checkOut">2nd Period</button>
           <button class="checkOut">3rd Period</button>
           <button class="checkOut">4th Period</button>

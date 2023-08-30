@@ -1,4 +1,8 @@
 function Button(props) {
-  return <button>{props.text}</button>;
+  return (
+    <button class={props.class} onClick={props.classNumber}>
+      {props.text}
+    </button>
+  );
 }
 export default Button;
