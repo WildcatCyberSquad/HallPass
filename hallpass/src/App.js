@@ -1,13 +1,18 @@
 import logo from "./logo.svg";
 import "./App.css";
-import Card from "./modules/Card";
+
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import ClassSelection from "./ClassSelection";
+import First from "./ClassPages/FirstPeriod";
 
 function App() {
   return (
-    <div className="App">
-      <h1 className="title">Hall Pass</h1>
-      <Card></Card>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<ClassSelection />}></Route>
+        <Route path="/First" element={<First />}></Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

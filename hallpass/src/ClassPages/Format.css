@@ -1,7 +1,14 @@
+.title {
+  text-align: center;
+  color: rgb(180, 180, 180);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 .background {
   height: 570px;
   border-radius: 15px;
-  background-color: rgb(199, 199, 199);
+  width: 100%;
+  background-color: rgb(80, 0, 0);
   border-color: rgb(0, 0, 0);
   border-width: 2px;
   border-style: solid;
@@ -12,17 +19,7 @@
   height: 565px;
   border-right-style: solid;
 }
-.checkIn {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  width: 90%;
-  height: 80%;
-  background-color: transparent;
-  border-color: transparent;
-  border-radius: 15px;
-  font-size: 150%;
-  font-weight: 600;
-}
+
 input {
   background-color: rgb(228, 228, 228);
   width: 90%;
@@ -34,16 +31,24 @@ input {
 .checkOut {
   margin-top: 15px;
   margin: 10px;
-  width: 90%;
+  width: 40%;
   height: 50px;
   border-radius: 15px;
-  font-size: 20px;
-  background-color: white;
+  font-size: 30px;
+  background-color: rgb(206, 206, 206);
 }
 .checkOut:hover {
   background-color: rgb(236, 236, 236);
 }
-#Name {
-  margin-top: 10px;
-  font-size: 36px;
+.checkIn {
+  background-color: transparent;
+  border-color: transparent;
+  width: 100%;
+  height: 50px;
+  color: rgb(180, 180, 180);
+  font-size: 40px;
+}
+.time {
+  color: rgb(180, 180, 180);
+  font-size: 30px;
 }
