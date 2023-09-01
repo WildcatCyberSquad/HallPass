@@ -12,14 +12,27 @@ function ClassSelection() {
             <Link to="/First">
               <button class="checkOut">1st Period</button>
             </Link>
-
-            <button class="checkOut">2nd Period</button>
-            <button class="checkOut">3rd Period</button>
-            <button class="checkOut">4th Period</button>
-            <button class="checkOut">5th Period</button>
-            <button class="checkOut">6th Period</button>
-            <button class="checkOut">7th Period</button>
-            <button class="checkOut">8th Period</button>
+            <Link to="/Second">
+              <button class="checkOut">2nd Period</button>
+            </Link>
+            <Link to="/Third">
+              <button class="checkOut">3rd Period</button>
+            </Link>
+            <Link to="/Fourth">
+              <button class="checkOut">4th Period</button>
+            </Link>
+            <Link to="/Fifth">
+              <button class="checkOut">5th Period</button>
+            </Link>
+            <Link to="/Sixth">
+              <button class="checkOut">6th Period</button>
+            </Link>
+            <Link to="/Seventh">
+              <button class="checkOut">7th Period</button>
+            </Link>
+            <Link to="/Eighth">
+              <button class="checkOut">8th Period</button>
+            </Link>
           </div>
         </div>
       </div>

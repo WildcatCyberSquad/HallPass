@@ -1,6 +1,6 @@
 import "./Format.css";
 
-import classList from "../ClassLists/first.json";
+import classList from "../ClassLists/sixth.json";
 import Button from "../modules/Buttons";
 import { Link } from "react-router-dom";
 
@@ -25,7 +25,7 @@ function checkOut(name) {
   document.getElementById("time").innerHTML = dateTime;
 }
 
-function First() {
+function Sixth() {
   return (
     <div>
       <div class="container text-center">
@@ -36,7 +36,7 @@ function First() {
             </Link>
           </div>
           <div class="col">
-            <h1 className="title">1st Period</h1>
+            <h1 className="title">6th Period</h1>
           </div>
           <div class="col"></div>
         </div>
@@ -71,4 +71,4 @@ function First() {
     </div>
   );
 }
-export default First;
+export default Sixth;

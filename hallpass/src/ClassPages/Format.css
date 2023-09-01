@@ -5,7 +5,7 @@
   margin-bottom: 20px;
 }
 .background {
-  height: 570px;
+  height: 100%;
   border-radius: 15px;
   width: 100%;
   background-color: rgb(80, 0, 0);
@@ -16,7 +16,7 @@
 .borderRight {
   border-right-color: rgb(145, 145, 145);
   border-right-width: 2px;
-  height: 565px;
+  height: 100%;
   border-right-style: solid;
 }
 
@@ -31,10 +31,10 @@ input {
 .checkOut {
   margin-top: 15px;
   margin: 10px;
-  width: 40%;
+  width: 30%;
   height: 50px;
   border-radius: 15px;
-  font-size: 30px;
+  font-size: 25px;
   background-color: rgb(206, 206, 206);
 }
 .checkOut:hover {
@@ -51,4 +51,12 @@ input {
 .time {
   color: rgb(180, 180, 180);
   font-size: 30px;
+}
+.back {
+  margin-top: 20px;
+  width: 50%;
+  height: 50%;
+  border-radius: 15px;
+  background-color: rgb(211, 211, 211);
+  font-size: 130%;
 }
