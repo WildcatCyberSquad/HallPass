@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 function ClassSelection() {
   return (
     <div>
+      <h1 className="title">Mrs. Hunter</h1>
       <h1 className="title">Hall Pass Check Out</h1>
       <div class="container text-center background">
         <div class="row">

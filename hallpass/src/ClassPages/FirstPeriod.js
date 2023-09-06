@@ -5,7 +5,6 @@ import Button from "../modules/Buttons";
 import { Link } from "react-router-dom";
 
 function checkOut(name) {
-  document.getElementById("checkIn").innerHTML = name;
   var today = new Date();
   var date =
     today.getFullYear() + "/" + (today.getMonth() + 1) + "/" + today.getDate();
@@ -21,8 +20,10 @@ function checkOut(name) {
   }
 
   var time = hours + ":" + minutes + " " + m;
-  var dateTime = date + " " + time;
-  document.getElementById("time").innerHTML = dateTime;
+  var dateTime = time;
+
+  document.getElementById("checkIn").innerHTML =
+    name + " checkout time: " + dateTime;
 }
 
 function First() {
@@ -44,7 +45,7 @@ function First() {
 
       <div class="container text-center background">
         <div class="row">
-          <div class="col-8 borderRight">
+          <div class="col-7 borderRight">
             {!classList.length ? (
               <h1>Class Not Found</h1>
             ) : (
@@ -60,10 +61,14 @@ function First() {
               })
             )}
           </div>
-          <div className="col-4">
+          <div className="col-5">
             <Link to="/">
-              <button className="checkIn" id="checkIn"></button>
-              <div id="time" className="time"></div>
+              <div>
+                <button className="checkIn" id="checkIn"></button>
+              </div>
+              <div>
+                <button className="checkIn2">Check In</button>
+              </div>
             </Link>
           </div>
         </div>

@@ -30,8 +30,8 @@ input {
 }
 .checkOut {
   margin-top: 15px;
-  margin: 10px;
-  width: 30%;
+  margin: 5px;
+  width: 45%;
   height: 50px;
   border-radius: 15px;
   font-size: 25px;
@@ -46,11 +46,22 @@ input {
   width: 100%;
   height: 50px;
   color: rgb(180, 180, 180);
-  font-size: 40px;
+  font-size: 200%;
+}
+.checkIn2 {
+  background-color: rgb(236, 236, 236);
+  border-color: black;
+  width: 70%;
+  height: 75px;
+  border-radius: 15px;
+  font-size: 50%;
+  margin-top: 100%;
+  color: rgb(0, 0, 0);
+  font-size: 150%;
 }
 .time {
   color: rgb(180, 180, 180);
-  font-size: 30px;
+  font-size: 30%;
 }
 .back {
   margin-top: 20px;
