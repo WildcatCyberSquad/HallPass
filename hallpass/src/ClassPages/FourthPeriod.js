@@ -3,26 +3,13 @@ import "./Format.css";
 import classList from "../ClassLists/fourth.json";
 import Button from "../modules/Buttons";
 import { Link } from "react-router-dom";
+import Time from "../modules/Time";
 
 function checkOut(name) {
-  document.getElementById("checkIn").innerHTML = name;
-  var today = new Date();
-  var date =
-    today.getFullYear() + "/" + (today.getMonth() + 1) + "/" + today.getDate();
-  var hours = today.getHours();
-  var m = "Am";
-  if (hours > 12) {
-    hours -= 12;
-    m = "Pm";
-  }
-  var minutes = today.getMinutes();
-  if (minutes < 10) {
-    minutes = "0" + minutes;
-  }
+  const time = Time();
 
-  var time = hours + ":" + minutes + " " + m;
-  var dateTime = date + " " + time;
-  document.getElementById("time").innerHTML = dateTime;
+  document.getElementById("checkIn").innerHTML =
+    name + "'s checkout time: " + time;
 }
 
 function Fourth() {

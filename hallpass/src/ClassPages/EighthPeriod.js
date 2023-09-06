@@ -3,28 +3,14 @@ import "./Format.css";
 import classList from "../ClassLists/eighth.json";
 import Button from "../modules/Buttons";
 import { Link } from "react-router-dom";
+import Time from "../modules/Time";
 
 function checkOut(name) {
-  document.getElementById("checkIn").innerHTML = name;
-  var today = new Date();
-  var date =
-    today.getFullYear() + "/" + (today.getMonth() + 1) + "/" + today.getDate();
-  var hours = today.getHours();
-  var m = "Am";
-  if (hours > 12) {
-    hours -= 12;
-    m = "Pm";
-  }
-  var minutes = today.getMinutes();
-  if (minutes < 10) {
-    minutes = "0" + minutes;
-  }
+  const time = Time();
 
-  var time = hours + ":" + minutes + " " + m;
-  var dateTime = date + " " + time;
-  document.getElementById("time").innerHTML = dateTime;
+  document.getElementById("checkIn").innerHTML =
+    name + "'s checkout time: " + time;
 }
-
 function Eighth() {
   return (
     <div>
@@ -62,8 +48,14 @@ function Eighth() {
           </div>
           <div className="col-4">
             <Link to="/">
-              <button className="checkIn" id="checkIn"></button>
-              <div id="time" className="time"></div>
+              <div>
+                <button className="checkIn" id="checkIn">
+                  Mrs. Hunter
+                </button>
+              </div>
+              <div>
+                <button className="checkIn2">Check In</button>
+              </div>
             </Link>
           </div>
         </div>
