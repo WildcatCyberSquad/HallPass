@@ -3,28 +3,53 @@ import "./App.css";
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ClassSelection from "./ClassSelection";
-import First from "./ClassPages/FirstPeriod";
-import Second from "./ClassPages/SecondPeriod";
-import Third from "./ClassPages/ThirdPeriod";
-import Fourth from "./ClassPages/FourthPeriod";
-import Fifth from "./ClassPages/FifthPeriod";
-import Sixth from "./ClassPages/SixthPeriod";
-import Seventh from "./ClassPages/SeventhPeriod";
-import Eighth from "./ClassPages/EighthPeriod";
+import first from "./ClassLists/first.json";
+import second from "./ClassLists/second.json";
+import fourth from "./ClassLists/fourth.json";
+import third from "./ClassLists/third.json";
+import fifth from "./ClassLists/fifth.json";
+import sixth from "./ClassLists/sixth.json";
+import seventh from "./ClassLists/seventh.json";
+import eighth from "./ClassLists/eighth.json";
+import ClassPeriods from "./ClassPages/ClassPeriods";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<ClassSelection />}></Route>
-        <Route path="/First" element={<First />}></Route>
-        <Route path="/Second" element={<Second />}></Route>
-        <Route path="/Third" element={<Third />}></Route>
-        <Route path="/Fourth" element={<Fourth />}></Route>
-        <Route path="/Fifth" element={<Fifth />}></Route>
-        <Route path="/Sixth" element={<Sixth />}></Route>
-        <Route path="/Seventh" element={<Seventh />}></Route>
-        <Route path="/Eighth" element={<Eighth />}></Route>
+        <Route
+          path="/First"
+          element={<ClassPeriods list={first} text="1st Period" />}
+        ></Route>
+        <Route
+          path="/Second"
+          element={<ClassPeriods list={second} text="2nd Period" />}
+        ></Route>
+        <Route
+          path="/Third"
+          element={<ClassPeriods list={fourth} text="3rd Period" />}
+        ></Route>
+        <Route
+          path="/Fourth"
+          element={<ClassPeriods list={third} text="4th Period" />}
+        ></Route>
+        <Route
+          path="/Fifth"
+          element={<ClassPeriods list={fifth} text="5th Period" />}
+        ></Route>
+        <Route
+          path="/Sixth"
+          element={<ClassPeriods list={sixth} text="6th Period" />}
+        ></Route>
+        <Route
+          path="/Seventh"
+          element={<ClassPeriods list={seventh} text="7th Period" />}
+        ></Route>
+        <Route
+          path="/Eighth"
+          element={<ClassPeriods list={eighth} text="8th Period" />}
+        ></Route>
       </Routes>
     </BrowserRouter>
   );
