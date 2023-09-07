@@ -8,8 +8,8 @@ import Time from "../modules/Time";
 function checkOut(name) {
   const time = Time();
 
-  document.getElementById("checkIn").innerHTML =
-    name + "'s checkout time: " + time;
+  document.getElementById("name").innerHTML = name;
+  document.getElementById("checkIn").innerHTML = "Checkout time: " + time;
 }
 
 function First() {
@@ -48,11 +48,11 @@ function First() {
             )}
           </div>
           <div className="col-5">
+            <h1 className="checkIn">Student out:</h1>
             <Link to="/">
               <div>
-                <button className="checkIn" id="checkIn">
-                  Mrs. Hunter
-                </button>
+                <button className="checkIn" id="name"></button>
+                <button className="checkIn" id="checkIn"></button>
               </div>
               <div>
                 <button className="checkIn2">Check In</button>
