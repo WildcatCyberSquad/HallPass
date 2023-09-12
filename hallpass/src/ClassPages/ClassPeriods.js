@@ -1,5 +1,4 @@
 import "./Format.css";
-
 import Time from "../modules/Time";
 import UpdateName from "../modules/UpdateName";
 import Header from "../modules/Header";
