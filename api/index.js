@@ -25,10 +25,20 @@ app.get("/", async (req, res) => {
     range: "Sheet1!A:A",
   });
 
+  await googleSheets.spreadsheets.values.append({
+    auth,
+    spreadsheetId,
+    range: "Sheet1!A:C",
+    valueInputOption: "USER_ENTERED",
+    resource: {
+      values: [["owen", "2:04", "2:10"]],
+    },
+  });
+
   res.send(getRows.data);
 });
 
-app.listen(1337, (req, res) => console.log("1337"));
+app.listen(5050, (req, res) => console.log("5050"));
 
 //
 //
