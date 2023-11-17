@@ -2,7 +2,7 @@ const express = require("express");
 const { google } = require("googleapis");
 
 const app = express();
-app.get("/", async (req, res) => {
+app.post("/", async (req, res) => {
   const auth = new google.auth.GoogleAuth({
     keyFile: "credentials.json",
     scopes: "https://www.googleapis.com/auth/spreadsheets",
